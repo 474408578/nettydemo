@@ -1,4 +1,4 @@
-package com.xschen.nettydemo.springbootlearn.qualifiertest;
+package com.xschen.nettydemo.springbootlearn.qualifier;
 
 /**
  * @author xschen

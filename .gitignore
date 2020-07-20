@@ -22,6 +22,11 @@ mvnw
 mvnw*
 *.ipr
 
+### java dump
+java_pid*
+gc.log*
+
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

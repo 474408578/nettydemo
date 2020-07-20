@@ -1,4 +1,4 @@
-package com.xschen.nettydemo.springbootlearn.qualifiertest;
+package com.xschen.nettydemo.springbootlearn.qualifier;
 
 import org.springframework.stereotype.Component;
 
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  */
 
 
-@Component
+@Component("barFormatter")
 public class BarFormatter implements Formatter {
     @Override
     public String format() {
