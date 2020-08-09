@@ -2,7 +2,8 @@ package com.xschen.nettydemo;
 
 import java.io.IOException;
 import java.net.Socket;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @Author xschen
@@ -14,8 +15,9 @@ public class IOClient {
             try {
                 Socket socket = new Socket("127.0.0.1", 8000);
                 while (true) {
-                    socket.getOutputStream().write((new Date() + ": hello world").getBytes());
-                    System.out.println(new Date());
+                    String now = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+                    socket.getOutputStream().write((now + ": hello world").getBytes());
+                    System.out.println(now);
                     Thread.sleep(2000);
                 }
             } catch (IOException e) {

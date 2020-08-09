@@ -93,7 +93,7 @@ public class TimeDemo {
 //        timeDemo.createTimeTest();
 //        timeDemo.modifyTimeTest();
 
-//        timeDemo.formatTimeTest();
+        timeDemo.formatTimeTest();
     }
 
 }
