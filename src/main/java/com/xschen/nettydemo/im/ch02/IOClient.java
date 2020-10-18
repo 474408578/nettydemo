@@ -1,4 +1,4 @@
-package com.xschen.nettydemo;
+package com.xschen.nettydemo.im.ch02;
 
 import java.io.IOException;
 import java.net.Socket;
