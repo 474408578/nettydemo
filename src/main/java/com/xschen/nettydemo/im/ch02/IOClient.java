@@ -13,6 +13,10 @@ public class IOClient {
     public static void main(String[] args) {
         new Thread(() -> {
             try {
+                /**
+                 * socket -> connect -> 连接建立 -> read or write -> close
+                 */
+                // socket -> connect
                 Socket socket = new Socket("127.0.0.1", 8000);
                 while (true) {
                     String now = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));

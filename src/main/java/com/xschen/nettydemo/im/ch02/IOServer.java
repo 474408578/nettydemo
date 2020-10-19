@@ -12,6 +12,10 @@ import java.net.Socket;
 
 public class IOServer {
     public static void main(String[] args) throws IOException {
+        /**
+         * socket -> bind -> listen -> accept -> 连接建立 -> read or write -> close
+         */
+        // socket -> bind -> listen
         ServerSocket serverSocket = new ServerSocket(8000);
         new Thread(() -> {
             while (true) {
