@@ -7,6 +7,10 @@ import java.net.Socket;
 
 /**
  * @author xschen
+ * BIO存在的问题：
+ *  1、线程资源受限
+ *  2、线程切换效率低下
+ *  3、读写数据以字节流为单位
  */
 
 
