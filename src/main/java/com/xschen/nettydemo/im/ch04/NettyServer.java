@@ -26,8 +26,6 @@ public class NettyServer {
 
         final AttributeKey<Object> clientKey = AttributeKey.newInstance("clientKey");
 
-
-
         serverBootstrap.group(boss, worker)
                 .channel(NioServerSocketChannel.class)
                 .attr(AttributeKey.newInstance("serverName"), "NettyServer")
