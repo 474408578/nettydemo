@@ -40,7 +40,7 @@ public class HttpServer {
                     // 指定服务器端的IO模型为NIO
                     .channel(NioServerSocketChannel.class)
                     .localAddress(new InetSocketAddress(port))
-                    // 注册channelHandler
+                    // 注册channelHandler，workGroup处理IO事件
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
